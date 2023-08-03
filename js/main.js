@@ -119,3 +119,26 @@ function getSquare(e){
 
 }
 
+
+
+/*=============Root Creator========*/
+
+
+
+const rootFormEl = document.querySelector("#rootForm");
+const userRootnumberEl = document.querySelector("#usersquareNumber");
+const putREl = document.querySelector("#userSput");
+const ansRootEl = document.querySelector("#ansRoot");
+
+
+
+rootFormEl.addEventListener("submit", getRoot)
+
+
+function getRoot(e){
+    e.preventDefault()
+        let root = Math.sqrt(userRootnumberEl.value);
+        putREl.innerHTML = userRootnumberEl.value;
+        ansRootEl.innerHTML = root;
+}
+
