@@ -1,3 +1,6 @@
+
+/*======inches tp feet==========*/
+
 const incheTofeet = document.querySelector("#iTf");
 const userInche = document.querySelector("#userInches");
 const feetEl = document.querySelector("#feet");
@@ -17,6 +20,9 @@ function getFeet(e){
 }
 
 
+/*=============Miles to kilomiters+==============*/
+
+
 const mileTokilo = document.querySelector("#mTk");
 const userMileEl = document.querySelector("#userMile");
 const kiloEl = document.querySelector("#kilo");
@@ -34,6 +40,11 @@ function getKilo(e){
     
 
 }
+
+
+/* ==============factorial function=========*/
+
+
 const factorEl = document.querySelector("#factor");
 const userNumberEl = document.querySelector("#userNumber");
 const factorialEl = document.querySelector("#factorial");
@@ -52,6 +63,34 @@ function getFactor(e){
         }
         factoriaEl.innerHTML = userNumberEl.value;
     factorialEl.innerHTML=  `= ${myFactor}`;
+
+}
+
+
+
+/*=============lepear cheker========*/
+
+const leoearCheker = document.querySelector("#lepearForm");
+const userYearEl = document.querySelector("#userYear");
+const yearEl = document.querySelector("#year");
+const leapearEl = document.querySelector("#cheker");
+
+
+
+leoearCheker.addEventListener("submit", getLepear)
+
+
+function getLepear(e){
+    e.preventDefault()
+        if(userYearEl.value%4===0){
+            yearEl.innerHTML = userYearEl.value;
+            leapearEl.innerHTML = "Lepear Year &#128525"
+        }
+        else{
+            yearEl.innerHTML = userYearEl.value;
+            leapearEl.innerHTML = "Non Lepear Year &#128546"
+
+        }
 
 }
 

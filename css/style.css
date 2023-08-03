@@ -35,7 +35,7 @@ body{
     gap: 10px;
 }
 h1{
-    background-image: url("/images\ \(4\).jpg");
+    background-image: url('imag');
     color: transparent;
     -webkit-background-clip: text;
 }
