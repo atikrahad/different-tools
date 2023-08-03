@@ -94,3 +94,28 @@ function getLepear(e){
 
 }
 
+
+
+
+/*=============Square Creator========*/
+
+
+
+const squareFormEl = document.querySelector("#squereForm");
+const usernumberEl = document.querySelector("#useranyNumber");
+const putEl = document.querySelector("#userput");
+const ansSquareEl = document.querySelector("#ansSquare");
+
+
+
+squareFormEl.addEventListener("submit", getSquare)
+
+
+function getSquare(e){
+    e.preventDefault()
+        let square = usernumberEl.value * usernumberEl.value;
+        putEl.innerHTML = usernumberEl.value;
+        ansSquareEl.innerHTML = square;
+
+}
+
