@@ -8,6 +8,7 @@
     box-sizing: border-box;
 
     font-family: 'EB Garamond', serif;
+    text-align: center;
     
 }
 
@@ -73,6 +74,32 @@ form{
 }
 h2{
     margin: 20px 0;
+}
+
+.clock-container{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 20px 0;
+    gap: 20px;
+    align-items:baseline;
+}
+.clock-container div{
+background-color: rgba(128, 0, 128, 0.349);
+opacity: .8;
+border-radius: 5px;
+}
+h3{
+    font-size: 3rem;
+    padding: 0 10px;
+    background: linear-gradient(45deg, rgb(238, 238, 238), rgb(0, 153, 153));
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
+p{
+    background-color: purple;
+    padding: 5px 10px;
+    color: aliceblue;
 }
 
 

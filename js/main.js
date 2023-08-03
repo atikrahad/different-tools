@@ -142,3 +142,23 @@ function getRoot(e){
         ansRootEl.innerHTML = root;
 }
 
+
+
+
+const hourEL = document.querySelector("#h");
+const minuteEL = document.querySelector("#m");
+const secondEL = document.querySelector("#s");
+
+
+function getTime(){
+    const h = new Date().getHours();
+    const m = new Date().getMinutes();
+    const s = new Date().getSeconds();
+    hourEL.innerHTML = h;
+    minuteEL.innerHTML = m;
+    secondEL.innerHTML = s;
+    setTimeout(()=>{
+        getTime();
+    },1000)
+}
+getTime()
