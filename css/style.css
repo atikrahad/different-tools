@@ -20,7 +20,7 @@ body{
 .container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 75%;
+    width: 85%;
     margin: 100px auto;
     gap: 50px;
 }
@@ -29,7 +29,9 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
+    padding: 30px 10px;
+    box-shadow: 2px 4px 16px  black;
+    border-radius: 5px;
     gap: 10px;
 }
 h1{
@@ -52,6 +54,7 @@ form{
     display: block;
     margin-bottom: 20px;
     font-size: 1.25rem;
+    border-radius: 1px;
     color: rgba(0, 0, 0, 0.575);
 }
 .btn{
