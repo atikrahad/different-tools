@@ -161,4 +161,23 @@ function getTime(){
         getTime();
     },1000)
 }
-getTime()
+getTime();
+
+
+
+const form = document.querySelector("#triangal");
+const userInput = document.querySelector("#triNumber");
+const an = document.querySelector("#usertri");
+const ans = document.querySelector("#anstri");
+
+
+form.addEventListener('submit', getTri);
+
+function getTri(e){
+    e.preventDefault();
+    let us = userInput.value
+    let getresult = (us * (us+1)) / 2;
+    an.innerHTML = us;
+    ans.innerHTML = getresult;
+}
+getTri()
